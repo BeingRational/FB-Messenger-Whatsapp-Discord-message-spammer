@@ -13,7 +13,7 @@ sendDelay = 1;
 
 # Checks if on Mac or Windows
 if platform.system() == "Windows":
-    driver = webdriver.Chrome('chromedriver.exe')
+    driver = webdriver.Chrome('chromedriver.exe')      #if line 16 doesn't work or gives an error, the correct path must be given as, driver = webdriver.Chrome(r"C:\Users\user_name\Desktop\folder_name\chromedriver")
 else:
     driver = webdriver.Chrome()
 
